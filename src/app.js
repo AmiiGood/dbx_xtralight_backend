@@ -58,7 +58,7 @@ app.get("/health", (req, res) => {
 // IMPORTAR RUTAS
 // ========================================
 
-// TODO: Descomentar cuando creemos las rutas
+// TODO:
 // const authRoutes = require('./routes/auth');
 // const usuariosRoutes = require('./routes/usuarios');
 // const articulosRoutes = require('./routes/articulos');
