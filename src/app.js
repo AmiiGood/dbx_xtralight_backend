@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === "development") {
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "API Sistema de Etiquetas Foam Creations.",
+    message: "API Sistema de Etiquetas Foam Creations",
     version: "1.0.0",
     timestamp: new Date().toISOString(),
   });
