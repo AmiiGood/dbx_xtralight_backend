@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === "development") {
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "API Sistema de Etiquetas Foam Creations",
+    message: "API Sistema de Etiquetas Foamy",
     version: "1.0.0",
     timestamp: new Date().toISOString(),
   });
@@ -58,13 +58,12 @@ app.get("/health", (req, res) => {
 // IMPORTAR RUTAS
 // ========================================
 
-// TODO:
-// const authRoutes = require('./routes/auth');
+const authRoutes = require("./routes/auth");
 // const usuariosRoutes = require('./routes/usuarios');
 // const articulosRoutes = require('./routes/articulos');
 // const etiquetasRoutes = require('./routes/etiquetas');
 
-// app.use('/api/auth', authRoutes);
+app.use("/api/auth", authRoutes);
 // app.use('/api/usuarios', usuariosRoutes);
 // app.use('/api/articulos', articulosRoutes);
 // app.use('/api/etiquetas', etiquetasRoutes);
