@@ -59,12 +59,12 @@ app.get("/health", (req, res) => {
 // ========================================
 
 const authRoutes = require("./routes/auth");
-// const usuariosRoutes = require('./routes/usuarios');
+const usuariosRoutes = require('./routes/usuarios');
 const articulosRoutes = require('./routes/articulos');
 // const etiquetasRoutes = require('./routes/etiquetas');
 
 app.use("/api/auth", authRoutes);
-// app.use('/api/usuarios', usuariosRoutes);
+app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/articulos', articulosRoutes);
 // app.use('/api/etiquetas', etiquetasRoutes);
 
